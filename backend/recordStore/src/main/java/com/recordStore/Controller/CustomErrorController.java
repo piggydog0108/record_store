@@ -1,4 +1,4 @@
-package com.recordStore;
+package com.recordStore.Controller;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,6 @@ public class CustomErrorController implements ErrorController {
 
     @RequestMapping("/error")
     public String handleError(){
-        
         return "./index.html";
     }
 
