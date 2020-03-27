@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/api")
 public class DashBoardController {
-
-    
     @PostMapping("/ip")
     public ResponseEntity<String> ip (HttpServletRequest request){
         return ResponseEntity.ok(request.getRemoteAddr());
